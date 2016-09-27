@@ -1,0 +1,107 @@
+Hello World 4 ways 
+A tour of Go
+28 Sep 2016
+
+Andrew Owen
+Software Developer, Genesis Global Technologies
+yumaikas94@gmail.com
+https://junglecoder.com
+@yumaikas
+
+* Intro
+
+- Andrew Owen, @yumaikas on the interwebs
+- Go is my night langauge, 
+- [[https://junglecoder.com][Jungle Coder]], my artisinal, crafted blog
+- [[https://pisc.junglecoder.com][PISC]], a side project scripting language
+
+
+- About four years of hacking with Go
+- Studying Software Engineering at FGCU, senior year
+- Working in C# & T-SQL for money
+
+*  History of Go
+
+- Built at Google
+- Announced in 2009
+
+Designed by Robert Griesmer, Ken Thompson, & Rob Pike
+
+Both Rob and Ken worked on Plan 9 before Google
+
+Go is very no-nonsense
+
+* Where is Go used?
+
+In Google:
+
+- [[https://github.com/kubernetes/kubernetes][Kubernetes]]
+- [[http://vitess.io][Vitess]] A MySQL sharder for YouTube
+- [[https://dl.google.com][Google Chrome Download Website]]
+
+Outside Google: 
+
+- [[http://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go/18-Why_GoThe_Five_Reasons_Why][Docker]]
+- [[https://blog.cloudflare.com/go-at-cloudflare/][CloudFlare's Railgun]]
+- [[https://www.junglecoder.com][Jungle Coder]] *wink*, *wink*
+- [[https://github.com/golang/go/wiki/GoUsers][Many more places]]
+
+* What makes Go special?
+- Rock solid networking libraries (HTTP2, SSL, net/http)
+- Baked in concurrency
+- Tools provided with Go are top notch 
+- (except for go get, it's merely ok)
+- Autocomplete avaiable for your editor of choice
+- Gofmt has decided all things formatting
+
+
+* Enough talk, DEMOS!
+
+.play Demo1.go
+
+- Go source code is UTF-8
+- And the stdlib is written to handle UTF-8 strings
+- Go has lightweight syntax (No semicolons required)
+- Static, inferred typing (Less verbose than Java-oids)
+- Very easy to parse, leads to strong tooling.
+- Fast compile times
+- Any questions?
+
+
+* Setting up a server that listens on HTTP is very easy
+
+.play Demo2.go
+
+[[http://localhost:8080/Rocket+Lounge][See it in action]]
+
+* And isn't hard to extend the server, say if your MIME type isn't built in:
+
+.play Demo3.go /SHOW OMIT/,/ENDSHOW OMIT/
+
+Any `init` runs before `main` 
+- Go can make a very easy localhost sever if you want to do some static site/JS prototyping
+[[http://localhost:8080][See it in action]]
+
+* Go has some wicked awesome concurrency 
+
+* Concurrency Demo
+
+.play Demo4.go /4.1 OMIT/,/4.1end OMIT/
+
+Ranging over string gives 32 bit runes
+
+A Go routine is a green thread that is M:N mapped to processor threads
+- Questions?
+
+* Review
+
+- Go is:
+-- UTF-8
+-- Simple for Web
+-- Very concurrent
+-- Fun to use, if you can live with it's choices
+
+* Q/a
+- You can find me at @yumaikas on twitter
+- junglecoder.com
+- Questions?
