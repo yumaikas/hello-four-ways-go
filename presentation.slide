@@ -51,8 +51,8 @@ Outside Google:
 - Baked in concurrency
 - Tools provided with Go are top notch 
 - (except for go get, it's merely ok)
-- Autocomplete avaiable for your editor of choice
-- Gofmt has decided all things formatting
+- Autocomplete available for your editor of choice
+- Gofmt
 
 
 * Enough talk, DEMOS!

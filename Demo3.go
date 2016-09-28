@@ -6,11 +6,11 @@ import (
 	"net/http"
 )
 
+var q = mime.WordDecoder{}
+
 // SHOW OMIT
-// Clickonce
 func init() {
-	mime.AddExtensionType(".application", "application/x-ms-application")
-	mime.AddExtensionType(".manifest", "application/x-ms-manifest")
+	mime.AddExtensionType(".image", "image/svg+xml")
 }
 
 // https://www.junglecoder.com/downloads/areacodedialer/ as an example
